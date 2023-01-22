@@ -1,0 +1,56 @@
+// Main del contacto
+.main-contacto {
+  background-color: $backgroundColor;
+  @include sectionSpacing(0, 3rem, 4rem);
+  margin-top: 4rem;
+  color: $detailColor;
+  .content {
+    @include flexBox(row, space-evenly, center, 2rem, wrap);
+
+    .formulario {
+      flex-basis: 45%;
+      @include flexBox(column, space-evenly, stretch, 1rem, nowrap);
+      
+      h2 {
+        font-family: $fontBelleza;
+        font-size: 3rem;
+      }
+
+      p {
+        font-family: $fontBelleza;
+        font-size: 1.3rem;
+      }
+
+      .btn {
+        background-color: $buttonColor;
+        color: $textWhite;
+        border: none;
+      }
+    }
+    .mas-info {
+      flex-basis: 45%;
+      @include flexBox(column, space-evenly, stretch, 1rem, nowrap);
+      font-family: $fontBelleza;
+      
+      h4 {
+        text-align: center;
+        font-size: 3.2rem;
+      }
+      .info-adress {
+        @include flexBox(row, space-between, stretch, 1rem, wrap);
+        & > * {
+          flex-basis: 45%;
+          min-width: 136px;
+        }
+        div {
+          text-align: end;
+        }
+      }
+      .map {
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

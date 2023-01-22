@@ -1,0 +1,98 @@
+// Main del index
+.main-index {
+  .intro {
+    @include sectionSpacing(4rem, 0);
+  }
+
+  .info {
+    @include sectionSpacing(8rem, 2rem, 2rem);
+    @include flexBox(row, space-evenly, center, 2rem, wrap);
+    
+    &-photo {
+      order: 1;
+      border-radius: 10px;
+      overflow: hidden;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &-content {
+      text-align: center;
+      flex-basis: 50%;
+      order: 1;
+      
+      h1 {
+        font-family: $fontCormorant;
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2rem;
+
+      }
+    }
+  }
+
+  .seccion-tips {
+    background-color: $backgroundColor;
+    @include flexBox(column, center, center, 0, nowrap);
+    @include sectionSpacing(4rem, 0);
+    padding-top: 4rem;
+    color: $detailColor;
+    .tips {
+      padding: 40px 40px 80px 40px;
+      .carousel {
+        max-width: 800px;
+      }
+    }
+    .carousel-item {
+      height: 500px;
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .tips-imagen {
+      height: 200px;
+      width: 200px;
+      margin: 10px 10px 20px 10px;
+    }
+    .tips-texto {
+      max-width: 70%;
+      font-size: 20px;
+      text-align: center;
+      font-family: $fontTajawal;
+      font-size: 1.3rem;
+    }
+    .tips-info {
+      font-weight: bold;
+      text-align: center;
+      p {
+        margin-bottom: 0;
+      }
+      .cargo {
+        font-size: 0.9rem;
+        color: #656060;
+      }
+    }
+    .tips-footer {
+      .cliente {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .seccion-descripcion {
+    text-align: center;
+    font-family: $fontTajawal;
+  }
+  .seccion-titulo {
+    font-family: $fontCormorant;
+    font-size: 3rem;
+  }
+  
+}

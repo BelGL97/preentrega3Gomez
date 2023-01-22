@@ -1,0 +1,96 @@
+// Main de la página piel
+.main-piel {
+  .hero {
+    @include sectionSpacing(4rem, 0);
+    background-image:url(../../assets/images/pieles.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    color: $textWhite;
+    @include flexBox(row, center, center, 0, nowrap);
+    
+    &-text {
+      flex-basis: 70%;
+      text-align: center;
+      font-family: $fontCormorant;
+      
+      h1 {
+        font-size: 4rem;
+        padding-bottom: 1.2rem;
+      }
+    }
+  }
+
+  .descripcion {
+    @include sectionSpacing(4rem, 3rem);
+    &-text {
+      background-color: $backgroundColor;
+      margin: 5rem auto;
+      
+      text-align: center;
+      border-radius: 10px;
+      padding: 1.2rem;
+      color: $blackColor;
+      font-size: 1.5rem;
+    }
+
+    .cards {
+      @include flexBox(row, space-evenly, stretch, 2rem, wrap);
+      
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        border: none;
+        font-family: $fontCormorant;
+        
+      }
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .flip-card-back {
+        background-color: $searchColor;
+        color: $detailColor;
+        transform: rotateY(180deg);
+        padding: 1rem;
+        @include flexBox(column, center, stretch, 1rem, nowrap);
+        border-radius: 10px;
+        h2 {
+          font-weight: bolder;
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.3rem;
+          font-family: $fontTajawal;
+        }
+
+
+      }
+    }
+  }
+}

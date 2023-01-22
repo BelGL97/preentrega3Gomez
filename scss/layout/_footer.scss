@@ -1,0 +1,123 @@
+// Footer
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background-color: $searchColor;
+
+  .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-gap: 1.5rem;
+
+    section h2 {
+      position: relative;
+      color: $detailColor;
+      letter-spacing: 0.1rem;
+      font-family: $fontLobster;
+    }
+
+    section p {
+      color: $blackColor;
+      font-family: $fontTajawal;
+      font-size: 1.4rem;
+      font-weight: 500;
+      
+
+    }
+
+    .about {
+      .social {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        gap: 10px;
+  
+        a {
+          display: flex;
+          width: 48px;
+          height: 48px;
+          background-color: $detailColor;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+  
+          .bi {
+            color: $textWhite;
+            font-size: 20px;
+          }
+  
+          &:hover {
+            background-color: #d1cac5;
+          }
+          &:hover .bi {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .links {
+      position: relative;
+
+      a {
+        color: $blackColor;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-family: $fontTajawal;
+        font-size: 1.4rem;
+        font-weight: 500;
+        
+
+        &:hover {
+          color: $secondaryColor;
+
+        }
+        
+      }
+    }
+
+    .adress {
+      position: relative;
+      color: $blackColor;
+      font-family: $fontTajawal;
+      font-size: 1.4rem;
+      font-weight: 500;
+      li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        margin-bottom: 16px;
+        
+        span:nth-child(1) {
+          color: $blackColor;
+          font-size: 20px;
+        }
+        span {
+          color: $blackColor;
+        }
+      }
+      a {
+        color: $blackColor;
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    margin-top: 40px;
+    p {
+      padding: 8px 100px;
+      text-align: center;
+      color: $blackColor;
+      font-family: $fontTajawal;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+  
+}

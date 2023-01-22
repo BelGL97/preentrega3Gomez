@@ -1,0 +1,31 @@
+// Header
+header {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: stretch;
+
+
+    .navbar-brand {
+      align-self: center;
+      color: $brandcolor;
+      font-family: $fontBelleza;
+      font-size: 3.5rem;
+      
+    }
+    
+    .navbar-nav {
+      
+      justify-content: space-between;
+      padding: 0 2rem;
+      position: relative;
+      background-color: $searchColor;
+      .nav-item {
+        .nav-link {
+          font-family: $fontSatisfy;
+          font-size: 2rem;
+
+        }
+      }
+    }
+  }
+}

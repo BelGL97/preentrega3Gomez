@@ -1,0 +1,75 @@
+// Main del acerca
+.main-acerca {
+  @include sectionSpacing(4rem,0);
+  .hero {
+    @include flexBox(row, center, center, 0, nowrap);
+    background-image: url(../../assets/images/centro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: white;
+    p {
+      font-family: $fontSatisfy;
+      font-size: 3rem;
+      background-color: $detailColor;
+      color: $searchColor;
+      padding: 1rem;
+      border-radius: 40px;
+    }
+  }
+  .about {
+    @include sectionSpacing(4rem, 2rem);
+    @include gridBox(3, 2);
+    gap: 1rem;
+
+    &-content {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      align-self: center;
+    } 
+
+    &-icon {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      width: 70%;
+      justify-self: center;
+      @include flexBox(column, start, center, 1rem, nowrap);
+
+      img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    &-us {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      align-self: center;
+      
+      h2 {
+        text-align: center;
+      }
+      .avatars {
+        padding-top: 3rem;
+        @include flexBox(row, space-evenly, stretch, 0, nowrap);
+        
+        .avatar {
+          @include flexBox(column, space-around, center, 0.75rem, nowrap);
+
+          img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}

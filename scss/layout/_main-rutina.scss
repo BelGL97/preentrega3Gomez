@@ -1,0 +1,41 @@
+// Main de rutina
+.main-rutina {
+  background-color: $backgroundColor;
+  @include sectionSpacing(0rem, 0, 6rem);
+  margin-top: 4rem;
+  .info {
+    h1 {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: $detailColor;
+      font-family: $fontCormorant;
+      font-size: 3.5rem;
+    }
+    .cards {
+      @include flexBox(row, space-evenly, center, 2rem, wrap);
+      .card {
+        width: 18rem;
+        overflow: hidden;
+        border: none;
+        border-radius: 50px;
+        
+
+        .card-body {
+          @include flexBox(column, center, center, 1rem, nowrap);
+
+          .card-title {
+            font-family: $fontLobster;
+            font-size: 2rem;
+          }
+          .card-text {
+            text-align: center;
+          }
+          .btn {
+            background-color: $buttonColor;
+            color: $textWhite;
+          }
+        }
+      }
+    }
+  }
+}

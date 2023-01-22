@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*::selection {
+  background-color: #f5b7b7; }
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+header .navbar-collapse {
+  flex-direction: column;
+  align-items: stretch; }
+  header .navbar-collapse .navbar-brand {
+    align-self: center;
+    color: #FF8E9E;
+    font-family: "Belleza", sans-serif;
+    font-size: 3.5rem; }
+  header .navbar-collapse .navbar-nav {
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: relative;
+    background-color: #f5b7b7; }
+    header .navbar-collapse .navbar-nav .nav-item .nav-link {
+      font-family: "Satisfy", cursive;
+      font-size: 2rem; }
+
+.main-index .intro {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.main-index .info {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; }
+  .main-index .info-photo {
+    order: 1;
+    border-radius: 10px;
+    overflow: hidden; }
+    .main-index .info-photo img {
+      max-width: 100%;
+      height: auto; }
+  .main-index .info-content {
+    text-align: center;
+    flex-basis: 50%;
+    order: 1; }
+    .main-index .info-content h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 4rem; }
+    .main-index .info-content p {
+      font-size: 2rem; }
+
+.main-index .seccion-tips {
+  background-color: #d1cac5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-top: 4rem;
+  color: #5f113d; }
+  .main-index .seccion-tips .tips {
+    padding: 40px 40px 80px 40px; }
+    .main-index .seccion-tips .tips .carousel {
+      max-width: 800px; }
+  .main-index .seccion-tips .carousel-item {
+    height: 500px; }
+    .main-index .seccion-tips .carousel-item .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  .main-index .seccion-tips .tips-imagen {
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px 20px 10px; }
+  .main-index .seccion-tips .tips-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1.3rem; }
+  .main-index .seccion-tips .tips-info {
+    font-weight: bold;
+    text-align: center; }
+    .main-index .seccion-tips .tips-info p {
+      margin-bottom: 0; }
+    .main-index .seccion-tips .tips-info .cargo {
+      font-size: 0.9rem;
+      color: #656060; }
+  .main-index .seccion-tips .tips-footer .cliente {
+    font-size: 1.2rem; }
+
+.main-index .seccion-descripcion {
+  text-align: center;
+  font-family: "Tajawal", sans-serif; }
+
+.main-index .seccion-titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem; }
+
+.main-piel .hero {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: url(../../assets/images/pieles.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap; }
+  .main-piel .hero-text {
+    flex-basis: 70%;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif; }
+    .main-piel .hero-text h1 {
+      font-size: 4rem;
+      padding-bottom: 1.2rem; }
+
+.main-piel .descripcion {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .main-piel .descripcion-text {
+    background-color: #d1cac5;
+    margin: 5rem auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.2rem;
+    color: #000000;
+    font-size: 1.5rem; }
+  .main-piel .descripcion .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    .main-piel .descripcion .cards .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+      border: none;
+      font-family: "Cormorant Garamond", serif; }
+    .main-piel .descripcion .cards .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d; }
+    .main-piel .descripcion .cards .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg); }
+    .main-piel .descripcion .cards .flip-card-front, .main-piel .descripcion .cards .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .main-piel .descripcion .cards .flip-card-front {
+      background-color: #bbb;
+      color: black;
+      overflow: hidden;
+      border-radius: 10px; }
+    .main-piel .descripcion .cards .flip-card-back {
+      background-color: #f5b7b7;
+      color: #5f113d;
+      transform: rotateY(180deg);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      gap: 1rem;
+      flex-wrap: nowrap;
+      border-radius: 10px; }
+      .main-piel .descripcion .cards .flip-card-back h2 {
+        font-weight: bolder;
+        font-size: 3rem; }
+      .main-piel .descripcion .cards .flip-card-back p {
+        font-size: 1.3rem;
+        font-family: "Tajawal", sans-serif; }
+
+.main-rutina {
+  background-color: #d1cac5;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-top: 4rem; }
+  .main-rutina .info h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #5f113d;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem; }
+  .main-rutina .info .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    .main-rutina .info .cards .card {
+      width: 18rem;
+      overflow: hidden;
+      border: none;
+      border-radius: 50px; }
+      .main-rutina .info .cards .card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: nowrap; }
+        .main-rutina .info .cards .card .card-body .card-title {
+          font-family: "Lobster Two", cursive;
+          font-size: 2rem; }
+        .main-rutina .info .cards .card .card-body .card-text {
+          text-align: center; }
+        .main-rutina .info .cards .card .card-body .btn {
+          background-color: #f77a80;
+          color: #ffffff; }
+
+.main-contacto {
+  background-color: #d1cac5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 4rem;
+  color: #5f113d; }
+  .main-contacto .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    .main-contacto .content .formulario {
+      flex-basis: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: stretch;
+      gap: 1rem;
+      flex-wrap: nowrap; }
+      .main-contacto .content .formulario h2 {
+        font-family: "Belleza", sans-serif;
+        font-size: 3rem; }
+      .main-contacto .content .formulario p {
+        font-family: "Belleza", sans-serif;
+        font-size: 1.3rem; }
+      .main-contacto .content .formulario .btn {
+        background-color: #f77a80;
+        color: #ffffff;
+        border: none; }
+    .main-contacto .content .mas-info {
+      flex-basis: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: stretch;
+      gap: 1rem;
+      flex-wrap: nowrap;
+      font-family: "Belleza", sans-serif; }
+      .main-contacto .content .mas-info h4 {
+        text-align: center;
+        font-size: 3.2rem; }
+      .main-contacto .content .mas-info .info-adress {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+        flex-wrap: wrap; }
+        .main-contacto .content .mas-info .info-adress > * {
+          flex-basis: 45%;
+          min-width: 136px; }
+        .main-contacto .content .mas-info .info-adress div {
+          text-align: end; }
+      .main-contacto .content .mas-info .map iframe {
+        width: 100%; }
+
+.main-acerca {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .main-acerca .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    background-image: url(../../assets/images/centro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: white; }
+    .main-acerca .hero p {
+      font-family: "Satisfy", cursive;
+      font-size: 3rem;
+      background-color: #5f113d;
+      color: #f5b7b7;
+      padding: 1rem;
+      border-radius: 40px; }
+  .main-acerca .about {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem; }
+    .main-acerca .about-content {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      align-self: center; }
+    .main-acerca .about-icon {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      width: 70%;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: nowrap; }
+      .main-acerca .about-icon img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px; }
+      .main-acerca .about-icon p {
+        text-align: center; }
+    .main-acerca .about-us {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      align-self: center; }
+      .main-acerca .about-us h2 {
+        text-align: center; }
+      .main-acerca .about-us .avatars {
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 0;
+        flex-wrap: nowrap; }
+        .main-acerca .about-us .avatars .avatar {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          gap: 0.75rem;
+          flex-wrap: nowrap; }
+          .main-acerca .about-us .avatars .avatar img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px; }
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background-color: #f5b7b7; }
+  footer .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-gap: 1.5rem; }
+    footer .wrapper section h2 {
+      position: relative;
+      color: #5f113d;
+      letter-spacing: 0.1rem;
+      font-family: "Lobster Two", cursive; }
+    footer .wrapper section p {
+      color: #000000;
+      font-family: "Tajawal", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500; }
+    footer .wrapper .about .social {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 50px);
+      gap: 10px; }
+      footer .wrapper .about .social a {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        background-color: #5f113d;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px; }
+        footer .wrapper .about .social a .bi {
+          color: #ffffff;
+          font-size: 20px; }
+        footer .wrapper .about .social a:hover {
+          background-color: #d1cac5; }
+        footer .wrapper .about .social a:hover .bi {
+          color: black; }
+    footer .wrapper .links {
+      position: relative; }
+      footer .wrapper .links a {
+        color: #000000;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-family: "Tajawal", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500; }
+        footer .wrapper .links a:hover {
+          color: #b8b8b8; }
+    footer .wrapper .adress {
+      position: relative;
+      color: #000000;
+      font-family: "Tajawal", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500; }
+      footer .wrapper .adress li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        margin-bottom: 16px; }
+        footer .wrapper .adress li span:nth-child(1) {
+          color: #000000;
+          font-size: 20px; }
+        footer .wrapper .adress li span {
+          color: #000000; }
+      footer .wrapper .adress a {
+        color: #000000; }
+        footer .wrapper .adress a:hover {
+          color: #b8b8b8; }
+  footer .copyright {
+    width: 100%;
+    margin-top: 40px; }
+    footer .copyright p {
+      padding: 8px 100px;
+      text-align: center;
+      color: #000000;
+      font-family: "Tajawal", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500; }
+
+@media screen and (max-width: 991px) {
+  .main-index .info {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    .main-index .info-content {
+      flex-basis: 70%; }
+  footer {
+    padding: 40px; }
+    footer .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); }
+      footer .wrapper .adress {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        justify-self: center; } }
+
+@media screen and (max-width: 768px) {
+  .main-contacto .content .mas-info .info-adress > * {
+    flex-basis: 100%;
+    text-align: end; } }
+
+@media screen and (max-width: 575px) {
+  .navbar-collapse {
+    text-align: center; }
+  .navbar-brand {
+    display: none; }
+  footer {
+    padding: 40px; }
+    footer .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr); }
+      footer .wrapper .about {
+        grid-row: 1/2;
+        grid-column: 1/2; }
+      footer .wrapper .links {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        align-self: center; }
+      footer .wrapper .adress {
+        justify-self: start;
+        grid-row: 3/4;
+        grid-column: 1/2; }
+    footer .copyright {
+      margin-top: 20px; }
+      footer .copyright p {
+        padding: 0; }
+  .main-contacto .content {
+    flex-direction: column; }
+    .main-contacto .content .mas-info .info-adress > * {
+      flex-basis: 100%;
+      text-align: center; }
+    .main-contacto .content .mas-info .info-adress div {
+      text-align: center; }
+  .main-acerca .about {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem; }
+    .main-acerca .about-content {
+      grid-column: 1/4;
+      grid-row: 1/2; }
+    .main-acerca .about-icon {
+      grid-column: 1/4;
+      grid-row: 2/3; }
+    .main-acerca .about-us {
+      grid-column: 1/4;
+      grid-row: 3/4; } }
+
+@media screen and (max-width: 480px) {
+  .main-acerca .about {
+    grid-template-rows: 0.5fr 0.7fr 1fr;
+    align-items: center; }
+    .main-acerca .about-us .avatars {
+      align-self: center;
+      flex-direction: column;
+      gap: 1rem; } }
+
+@media screen and (max-width: 320px) {
+  .main-index .info {
+    justify-content: center; }
+    .main-index .info-content {
+      flex-basis: 95%; }
+  .main-piel .hero {
+    background-attachment: initial;
+    height: 200px; }
+    .main-piel .hero-text {
+      flex-basis: 90%;
+      text-align: center; }
+      .main-piel .hero-text h1 {
+        padding-bottom: 0;
+        font-size: 1.2rem; }
+      .main-piel .hero-text p {
+        font-size: 0.7rem; }
+  .main-piel .descripcion {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .main-contacto {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    padding-bottom: 0; } }
